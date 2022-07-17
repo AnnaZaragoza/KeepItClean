@@ -1,0 +1,182 @@
+a {
+  text-decoration: none;
+  font-weight: lighter;
+  &:link,
+  &:visited,
+  &:active {
+    transition: all 0.7s;
+  }
+
+  &:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+  }
+}
+
+a.nav-calendar {
+  cursor: default;
+}
+a.fc-daygrid-event {
+  cursor: pointer;
+  &:hover {
+    transition: all 0.3s;
+    transform: scale(1.025);
+  }
+}
+
+input[type='number'] {
+  @include inputs-calendar;
+  width: 100px;
+  text-align: right;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 80%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 90px;
+  }
+}
+
+select {
+  @include inputs-calendar;
+  width: 100px;
+}
+
+input[type='time'] {
+  @include inputs-calendar;
+  width: 90px;
+  text-align: right;
+}
+
+input[type='submit'] {
+  @include buttons;
+  width: 100px;
+
+  background-color: $color-calendar;
+  color: $color-background-2;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+input[type='password'] {
+  @include inputs-sub-sections;
+  width: 100%;
+  margin-bottom: 10px;
+  &::placeholder {
+    color: #cccccc;
+  }
+}
+
+.login-form--item input[type='submit'] {
+  @include buttons;
+  width: 100%;
+
+  background-color: $color-calendar;
+  color: $color-background-2;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.tasks-form input[type='submit'] {
+  @include buttons;
+  background-color: $color-tasks;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.tasks-form input[type='button'],
+.tasks-form--editable-task input[type='button'] {
+  @include buttons;
+  background-color: $color-tasks;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  &:first-child {
+    margin-right: 10px;
+    width: auto;
+  }
+  &:nth-of-type(2) {
+    width: auto;
+  }
+}
+
+.reports-form input[type='submit'] {
+  @include buttons;
+  background-color: $color-reports;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.reports-form input[type='button'],
+.reports-form--editable-task input[type='button'] {
+  @include buttons;
+  background-color: $color-reports;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  &:first-child {
+    margin-right: 10px;
+    width: auto;
+  }
+  &:nth-of-type(2) {
+    width: auto;
+  }
+}
+
+input[type='text'] {
+  @include inputs-sub-sections;
+  width: 100%;
+  margin-bottom: 10px;
+  &::placeholder {
+    color: #cccccc;
+  }
+}
+
+button {
+  padding: 7px;
+  border-radius: 5px;
+  width: 100px;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: 300ms;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.task--edit-btn,
+.task--dlt-btn {
+  background-color: $color-background-1;
+  color: $color-tasks;
+  font-weight: bold;
+}
+
+.report--edit-btn,
+.report--dlt-btn {
+  background-color: $color-background-1;
+  color: $color-reports;
+  font-weight: bold;
+}

@@ -1,0 +1,70 @@
+header {
+  background-color: $color-background-1;
+  transition: all 300ms;
+  animation: fade-out 0.5s ease-in-out;
+
+  .nav-bar {
+    display: flex;
+    padding: 3rem 10% 2rem;
+
+    .nav-welcome--button {
+      border-radius: 100px;
+      width: 100px;
+    }
+
+    .nav-welcome {
+      width: 80%;
+      color: $color-text-1;
+      font-weight: bold;
+      line-height: 49px;
+      margin-left: 20px;
+    }
+
+    .nav-links {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      transition: 300ms;
+
+      .nav-link {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        font-weight: bold;
+
+        i {
+          font-size: x-large;
+        }
+      }
+
+      .nav-calendar {
+        color: $color-calendar;
+      }
+      .nav-tasks {
+        color: $color-tasks;
+      }
+      .nav-reports {
+        color: $color-reports;
+      }
+    }
+
+    @media only screen and (max-width: 670px) {
+      padding: 3rem 2% 0.25rem;
+      flex-flow: column wrap;
+      justify-content: center;
+
+      .nav-welcome {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: space-around;
+      }
+    }
+  }
+}

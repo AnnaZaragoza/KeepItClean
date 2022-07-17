@@ -1,0 +1,141 @@
+.main-sections {
+  padding: 0 10%;
+  transition: all 300ms;
+  animation: fade-out 0.5s ease-in-out;
+
+  .section-calendar {
+    margin: 2rem 0;
+
+    .calendar {
+      height: auto;
+      background-color: $color-background-2;
+      border-radius: 9px;
+      border-left: 4px solid $color-calendar;
+    }
+
+    .calendar-form {
+      display: none;
+      margin-top: 40px;
+      justify-content: center;
+      .calendar-form-item {
+        label {
+          margin-right: 10px;
+        }
+        .calendar-form--input-guests {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    padding: 0 2%;
+  }
+
+  .sub-sections {
+    .sub-section--2 {
+      .tasks-form {
+        @include forms;
+        border-left: 4px solid $color-tasks;
+
+        .tasks-form-item {
+          &:first-child {
+            margin-bottom: 10px;
+          }
+          &:last-child {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .tasks-list {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 15px;
+
+        .task {
+          width: 100%;
+          background-color: $color-background-2;
+          margin-top: 15px;
+          border-radius: 7px;
+          padding: 20px;
+          border-left: 4px solid $color-tasks;
+          animation: fade-out 0.5s ease-in-out;
+
+          .task-title {
+            display: flex;
+            justify-content: space-between;
+
+            .task--buttons {
+              display: flex;
+
+              .task--edit-btn {
+                margin-right: 20px;
+              }
+            }
+          }
+
+          .task-content {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    .sub-section--3 {
+      .reports-form {
+        @include forms;
+        border-left: 4px solid $color-reports;
+
+        .reports-form-item {
+          &:first-child {
+            margin-bottom: 10px;
+          }
+          &:last-child {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .reports-list {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 15px;
+
+        .report {
+          width: 100%;
+          background-color: $color-background-2;
+          margin-top: 15px;
+          border-radius: 7px;
+          padding: 20px;
+          border-left: 4px solid $color-reports;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          .report-title {
+            display: flex;
+            justify-content: space-between;
+
+            .report--buttons {
+              display: flex;
+
+              .report--edit-btn {
+                margin-right: 20px;
+              }
+            }
+          }
+
+          .report-content {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

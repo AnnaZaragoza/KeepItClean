@@ -1,0 +1,15 @@
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+TO IMPROVE
+
+1. CALENDAR:
+- editing event
+
+2. TASKS:
+- focus mouse on new task when created
+- focus mouse in new input when created 
+
+3. ARCHIVES (REPORTS):
+- focus mouse on new task when created
+- focus mouse in new input when created
+

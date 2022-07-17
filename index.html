@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Keep it Clean by Anna Zaragoza. Keep track of the maintenance of your AirBnB rentals."
+    />
+    <meta name="author" content="Anna Zaragoza" />
+
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/icon" />
+    <script
+      src="https://kit.fontawesome.com/df19045c01.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./src/sass/main.scss" />
+
+    <script type="module" src="./src/js/controller.js"></script>
+
+    <title>Keep it Clean</title>
+  </head>
+
+  <body>
+
+    <section class='login-form--container'>
+      <form class="login-form">
+        <div class="login-form--item">
+          <h4>Keep It Clean App</h4>
+        </div>
+        <div class="login-form--item">
+          <label>Username</label>
+          <input type="text" placeholder="Enter Username" class="login-form--username"/>
+          <label>Password</label>
+          <input type="password" placeholder="Enter Password" class="login-form--password"/>
+        </div>
+        <div class="login-form--item">
+          <input type="Submit" class="login-form--submit" value="Log In"></input>
+        </div>
+      </form>
+      <div class="login-form--accounts">
+        <p>
+          OWNER'S ACCOUNT<br/>
+          Username: owner<br/>
+          Password: owner<br/><br/>
+          CLEANER'S ACCOUNT<br/>
+          Username: cleaner<br/>
+          Password: cleaner<br/><br/>
+          <b style="color:#cc0000">TO SWITCH FROM ONE ACCOUNT TO THE OTHER, REFRESH THE PAGE FIRST</b>
+        </p>
+      </div>
+    </section>
+
+    <header class="header hidden">          
+       <nav class="nav-bar">
+        <button class="nav-welcome--button">Log Off</button>
+        <h3 class="nav-welcome">Welcome Owner!</h3>
+        <div class="nav-links">
+          <!-- <a class="nav-link nav-calendar" href="#section-1"
+            ><i class="far fa-calendar-alt"></i>Calendar</a
+          > -->
+          <a class="nav-link nav-tasks nav-bar-link" href="#section-2" data-tab="2"
+            ><i class="fas fa-tasks"></i>Tasks</a
+          >
+          <a class="nav-link nav-reports nav-bar-link" href="#section-3" data-tab="3"
+            ><i class="fas fa-folder-open"></i></i>Reports</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-sections hidden">
+      
+      <section class="section-calendar" id="section-1">
+        <div class="calendar">
+          <div id='calendarEl'></div>
+        </div>
+        <form class="calendar-form hidden">
+          <div class="calendar-form-item">
+            <label>Number of guests:</label>
+            <input type="number" class="calendar-form--input-guests" />
+          </div>
+          <!-- <div class="calendar-form-item">
+            <label>Type of checking:</label>
+            <select class="calendar-form--input-checking">
+              <option value="CheckIn">CheckIn</option>
+              <option value="CheckOut">CheckOut</option>
+            </select>
+          </div>
+          <div class="calendar-form-item">
+            <label>Time:</label>
+            <input type="time" class="calendar-form--input-time" />
+          </div> -->
+          <div class="calendar-form-item">
+            <input type="submit" value="Add" class="calendar-form-submit" />
+            
+          </div>
+        </form>
+        <input type="button" value="Remove Event" class="calendar-form--remove"  style="display:none"/>
+      </section>
+
+      <section class="sub-sections">
+        <section
+          class="sub-section--2 hidden"
+          id="section-2"
+        >
+          <form class="tasks-form">
+            <div class="tasks-form-item">
+                <label>Room:</label>
+                <input
+                  type="text"
+                  name="Room"
+                  placeholder="Introduce the name of the room..."
+                  class="tasks-form--input-room"
+                />      
+            </div>
+            <div class="tasks-form-item">     
+                <label>Tasks:</label>
+                <input 
+                  type="text" 
+                  name="Task" 
+                  placeholder="Introduce task to be performed..." 
+                  class="tasks-form--input-task"
+                /> 
+            </div>
+            <div class="tasks-form-item">     
+              <div class="tasks-form-item--new-task"></div>
+            </div>
+            <div class="tasks-form-item">
+              <div class="tasks-form-item--indivudual-task">
+                <input
+                  type="button"
+                  value="Add New Task"
+                  class="tasks-form--input-add-task"
+                />
+                <input
+                  type="button"
+                  value="Remove Last Task"
+                  class="tasks-form--input-remove-task"
+                />
+              </div>
+              <input
+                type="submit"
+                value="Add To List"
+                class="tasks-form--input-submit-new"
+              />
+            </div>
+          </form>
+
+          <div class="tasks-list"></div>
+           <!-- taskView.js -->
+        </section>
+        <!-- <section class="section-tasks" id="section-2">
+          <div class="task">
+            <h3>Bathroom 1</h3>
+            <ul>
+              <li>
+                <label>Check / change shower soaps</label>
+                <input type="checkbox" />
+              </li>
+              <li>
+                <label>Check / change sin soaps</label><input type="checkbox" />
+              </li>
+              <li>
+                <label>Check / change toilet paper</label>
+                <input type="checkbox" />
+              </li>
+              <li><label>Clean area</label><input type="checkbox" /></li>
+            </ul>
+          </div>
+        </section> -->
+        
+        <section class="sub-section--3 hidden" id="section-3">
+
+          <form class="reports-form">
+            <div class="reports-form-item">
+                <label>Room:</label>
+                <input
+                  type="text"
+                  name="Room"
+                  placeholder="Introduce the name of the room..."
+                  class="reports-form--input-room"
+                />      
+            </div>
+            <div class="reports-form-item">     
+                <label>Issues:</label>
+                <input 
+                  type="text" 
+                  name="Issue" 
+                  placeholder="Introduce issue found..." 
+                  class="reports-form--input-issue"
+                /> 
+            </div>
+            <div class="reports-form-item">     
+              <div class="reports-form-item--new-issue"></div>
+            </div>
+            <div class="reports-form-item">
+              <div class="reports-form-item--indivudual-issue">
+                <input
+                  type="button"
+                  value="Add New Issue"
+                  class="reports-form--input-add-issue"
+                />
+                <input
+                  type="button"
+                  value="Remove Last Issue"
+                  class="reports-form--input-remove-issue"
+                />
+              </div>
+              <input
+                type="submit"
+                value="Add To List"
+                class="reports-form--input-submit-new"
+              />
+            </div>
+          </form>
+
+          <div class="reports-list">
+            <!-- reportView.js -->
+          </div>
+        </section>
+    
+      </section>
+    </main>
+  </body>
+</html>

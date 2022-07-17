@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: 300ms;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.6;
+  color: $color-text-1;
+  background-color: $color-background-1;
+  margin-bottom: 50px;
+  transition: all 300ms;
+  animation: fade-out 0.5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

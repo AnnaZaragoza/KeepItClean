@@ -1,0 +1,28 @@
+{
+  "name": "keep-it-clean",
+  "version": "1.0.0",
+  "description": "App to keep track of the cleaning process of your AirBnB apartment",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "default": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^5.11.0",
+    "@fullcalendar/daygrid": "^5.11.0",
+    "@fullcalendar/interaction": "^5.11.0",
+    "@fullcalendar/list": "^5.11.0",
+    "@fullcalendar/timegrid": "^5.11.0",
+    "core-js": "^3.23.2",
+    "parcel-resolver-ignore": "^2.1.3",
+    "regenerator-runtime": "^0.13.9",
+    "uuid": "^8.3.2"
+  }
+}
