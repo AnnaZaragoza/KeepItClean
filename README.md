@@ -12,7 +12,7 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 
 - HTML5
 - SCSS - responsive
-- JavaScript ES6 - MCV pattern
+- JavaScript ES6 - MVC pattern
 - Parcel / babel
 
 # Deploy:
