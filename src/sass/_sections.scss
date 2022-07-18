@@ -47,6 +47,16 @@
             display: flex;
             justify-content: space-between;
           }
+
+          .tasks-form-item--indivudual-task {
+            @media only screen and (max-width: 450px) {
+              flex-direction: column;
+              width: 40%;
+              .tasks-form--input-add-task {
+                margin-bottom: 5px;
+              }
+            }
+          }
         }
       }
 
@@ -97,6 +107,16 @@
             margin-top: 20px;
             display: flex;
             justify-content: space-between;
+          }
+
+          .reports-form-item--indivudual-issue {
+            @media only screen and (max-width: 450px) {
+              flex-direction: column;
+              width: 40%;
+              .reports-form--input-add-issue {
+                margin-bottom: 5px;
+              }
+            }
           }
         }
       }
