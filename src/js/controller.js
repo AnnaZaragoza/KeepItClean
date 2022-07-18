@@ -28,6 +28,8 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import { v4 as uuidv4 } from 'uuid'; // creates unique ids
 
+console.log("Hello it's me :)");
+
 ///////////////////////////////////////////////////////////////////
 // CALENDAR CONTROLLERS
 
