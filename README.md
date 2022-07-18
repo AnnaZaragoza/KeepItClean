@@ -17,6 +17,4 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 
 # Deploy:
 
-Link to site: [KeepItCleanApp] (https://keepitcleanapp.netlify.app)
-
-# Installation:
+Go to site: https://keepitcleanapp.netlify.app/
