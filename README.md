@@ -11,9 +11,11 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 ### Technologies:
 
 - HTML5
-- SCSS - responsive
+- SCSS - RWD
 - JavaScript ES6 - MVC pattern
-- Parcel / babel
+- Parcel / Babel
+- fullCalendar 3rd Party Library
+- Save data in Loca Storage
 
 # Deploy:
 
