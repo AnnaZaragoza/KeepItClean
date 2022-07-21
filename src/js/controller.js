@@ -13,7 +13,7 @@ import eventsFormView from './views/eventsViews/eventsFormView';
 import tasksFormView from './views/tasksViews/tasksFormView';
 import reportsFormView from './views/reportsViews/reportsFormView';
 
-import { EVENTS_LIST } from './config';
+import { EVENTS_LIST } from './models/eventsModel';
 import { TASKS_LIST } from './models/tasksModel';
 import { REPORTS_LIST } from './models/reportsModel';
 import { setEventsToLocalStorage } from './models/eventsModel';
@@ -31,7 +31,7 @@ import { v4 as uuidv4 } from 'uuid'; // creates unique ids
 ///////////////////////////////////////////////////////////////////
 // CALENDAR CONTROLLERS
 
-const controlAddEvent = function (event) {
+let controlAddEvent = function (event) {
   let id = uuidv4(); // Unique id for each newEvent
   eventsModel.uploadEvent(event, id);
 
@@ -268,6 +268,13 @@ btnLogin.addEventListener('click', function (e) {
       if (appTasksDltBtn === null) console.log(null);
       if (typeof appTasksDltBtn === 'object')
         [...appTasksDltBtn].forEach(b => (b.style.display = 'none'));
+
+      // Didable calendar's edition
+      document
+        .querySelector('#section-1')
+        .addEventListener('click', function () {
+          alert('Calendar should not be edited by you!');
+        });
     }
   }
 

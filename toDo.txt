@@ -3,7 +3,7 @@
 TO IMPROVE
 
 1. CALENDAR:
-- editing event
+- editing event -> it should be disabled for the cleaner account
 
 2. TASKS:
 - focus mouse on new task when created
