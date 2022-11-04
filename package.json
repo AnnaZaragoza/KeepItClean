@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
-    "parcel": "^2.6.2"
+    "parcel": "^2.7.0",
+    "sass": "^1.56.0"
   },
   "dependencies": {
     "@fullcalendar/core": "^5.11.0",

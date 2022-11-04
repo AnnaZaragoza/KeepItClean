@@ -1,22 +1,54 @@
 # KeeItClean
 
+MVC (Model Viewer Controller) pattern app created with Vanilla JavaScript.
+It organises the cleaning tasks and the issues encountered in a rented apartment from AirBnB. 
 ![Alt Text](https://github.com/AnnaZaragoza/KeepItClean/blob/30080bce13623be0ff9c6225bb2915d2a897c9ac/img/app.png)
+Live Demo: [Keep It Clean App](https://keepitcleanapp.netlify.app/)
 
-# Description:
 
-App created to help the communication between owners of an AirBnB apartment and their cleaners.
-It has a calendar where the owner can show the length and the number of guests the apartment will have. He can also create, edit and delete the tasks the cleaner should perform in each room (exchange bedsheets, check damages, clean area, etc).
-On the other hand, the cleaner is able to check the calendar and those tasks - but not able to edit them. However, he is able to create, edit and delete reports (for example about damages found, missing equipment, etc.) and the owner is able to see them, but not edit them.
+## Technologies Used
+- Single Page App (SPA)
+- Functional Programming
+- MVC arquitecture - script type module
+- Parcel
+- Babel
+- fullCalendar (3rd Party Library)
+- JavaScript (ES6)
+- Sass
+- Local Storage usage
 
-### Technologies:
 
-- HTML5
-- SCSS - RWD
-- JavaScript ES6 - MVC pattern
-- Parcel / Babel
-- fullCalendar 3rd Party Library
-- Save data in Loca Storage
+## Setup
+To clone this repository you will need `Git` and `Node.js`.
 
-# Deploy:
+```
+# Clone this repository
+$ git clone https://github.com/AnnaZaragoza/KeepItClean.git
 
-Go to site: [Keep It Clean App](https://keepitcleanapp.netlify.app/)
+# Go into the repository
+$ cd KeepItClean
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+
+```
+
+## General Information
+KeepItClean shows a calendar where the owner of an AirBnB apartment can mark the length and the number of guests the apartment will have at that time. He can also create, edit and delete the tasks the cleaner should perform in each room (exchange bedsheets, check damages, clean area, etc). 
+
+On the other hand, the cleaner is able to check the calendar and those tasks - but not able to edit them. He can also create, edit and delete reports (for example about damages found, missing equipment, etc.) that the owner can only see and delete.
+
+## Features
+- 2 accounts with different rights
+- detects the user and blocks functionalities
+
+
+## Improvements
+- Authentification.
+- Block fully the cleaner from editing the calendar (at the moment only a warming alert is shown).
+- Sort lists of tasks and reports 
+- Focus mouse on new task/report when created
+- Check for bad language content (as the tasks and reports are free text editable)
