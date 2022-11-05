@@ -57,5 +57,5 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 - It is an idea from my partner. He is the owner of 2 AirBnB apartments.
 - I am specially proud of the architecture of the project and the re-usable components:
 <p align="center">
-![Alt Text](https://github.com/AnnaZaragoza/KeepItClean/blob/c8db5bb90f197dc11ccca0711ba9e5f82b305d79/img/srcfiles.png)
+<img src="![Alt Text](https://github.com/AnnaZaragoza/KeepItClean/blob/c8db5bb90f197dc11ccca0711ba9e5f82b305d79/img/srcfiles.png)">
 </p>
