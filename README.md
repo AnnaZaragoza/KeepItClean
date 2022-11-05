@@ -55,4 +55,4 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 
 ## Acknowledgements
 - This project has been created from scratch.
-- It is an idea of my partner who's the owner of 2 AirBnB apartments.
+- It is an idea from my partner. He is the owner of 2 AirBnB apartments.
