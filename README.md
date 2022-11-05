@@ -52,3 +52,7 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 - Sort lists of tasks and reports 
 - Focus mouse on new task/report when created
 - Check for bad language content (as the tasks and reports are free text editable)
+
+## Acknowledgements
+- This project has been created from scratch.
+- It is an idea of my partner who's the owner of 2 AirBnB apartments.
