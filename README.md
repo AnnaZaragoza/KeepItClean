@@ -40,10 +40,6 @@ KeepItClean shows a calendar where the owner of an AirBnB apartment can mark the
 
 On the other hand, the cleaner is able to check the calendar and those tasks - but not able to edit them. He can also create, edit and delete reports (for example about damages found, missing equipment, etc.) that the owner can only see and delete.
 
-## Features
-- 2 accounts with different rights
-- 
-
 
 ## Improvements
 - Authentification.
