@@ -1,4 +1,4 @@
-# KeeItClean
+# KeepItClean
 
 MVC pattern app created with Vanilla JavaScript.
 It organises the cleaning tasks and the issues encountered in a rented apartment from AirBnB. 
