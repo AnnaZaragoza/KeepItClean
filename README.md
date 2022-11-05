@@ -43,12 +43,11 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 
 ## Features
 - 2 accounts with different rights
-- detects the user and blocks functionalities
+- Detects the user and blocks functionalities
 
 
 ## Improvements
 - Authentification.
-- Block fully the cleaner from editing the calendar (at the moment only a warming alert is shown).
 - Sort lists of tasks and reports 
 - Focus mouse on new task/report when created
 - Check for bad language content (as the tasks and reports are free text editable)
