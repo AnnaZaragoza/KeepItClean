@@ -55,4 +55,3 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 ## Acknowledgements
 - This project has been created from scratch. 
 - It is an idea from my partner. He is the owner of 2 AirBnB apartments.
-- It was done after finishing a Udemy course. I wanted to practice my knowledge of pure JavaScript in a real project.
