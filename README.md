@@ -1,6 +1,6 @@
 # KeeItClean
 
-MVC (Model Viewer Controller) pattern app created with Vanilla JavaScript.
+MVC pattern app created with Vanilla JavaScript.
 It organises the cleaning tasks and the issues encountered in a rented apartment from AirBnB. 
 ![Alt Text](https://github.com/AnnaZaragoza/KeepItClean/blob/30080bce13623be0ff9c6225bb2915d2a897c9ac/img/app.png)
 Live Demo: [Keep It Clean App](https://keepitcleanapp.netlify.app/)
@@ -8,8 +8,7 @@ Live Demo: [Keep It Clean App](https://keepitcleanapp.netlify.app/)
 
 ## Technologies Used
 - Single Page App (SPA)
-- Functional Programming
-- MVC arquitecture - script type module
+- Model Viewer Controller Arquitecture (script type module)
 - Parcel
 - Babel
 - fullCalendar (3rd Party Library)
@@ -43,7 +42,7 @@ On the other hand, the cleaner is able to check the calendar and those tasks - b
 
 ## Features
 - 2 accounts with different rights
-- Detects the user and blocks functionalities
+- 
 
 
 ## Improvements
